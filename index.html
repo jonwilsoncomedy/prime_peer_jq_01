@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Car Stuff</title>
-    <link type="stylesheet" href="styles.css" />
-    <script src="https://code.jquery.com/jquery-3.0.0.js"
-    integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body>
     <h1>Car Stuff</h1>
+    <h3>"Show me the car stuff"</h3>
 
+    <div class="container">
+
+    <div id="addCar">
     <h2>Add a New Car</h2>
     <form id="carForm">
 
@@ -23,7 +26,7 @@
       <br />
 
       <label for="year">Year  </label>
-      <input type="number" name="year" id="year"></input>
+      <input type="text" name="year" id="year"></input>
       <br />
 
       <label for="color">Color  </label>
@@ -31,16 +34,20 @@
       <br />
 
       <label for="rating">Rating  </label>
-      <input type="number" name="rating" id="rating"></input>
+      <input type="text" name="rating" id="rating"></input>
       <br />
 
       <label for="price">Price  </label>
-      <input type="number" name="price" id="price"></input>
+      <input type="text" name="price" id="price"></input>
       <br />
 
-      <input type="submit" id="submit"></input>
-
+      <input type="submit"></input>
     </form>
+  </div>
+
+  <div id="holdCars"></div>
+
+  </div>
 
   </body>
 </html>
